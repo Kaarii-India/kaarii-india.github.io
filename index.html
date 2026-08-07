@@ -3,43 +3,69 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kaarii</title>
+    <title>Kaarii</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- Material Icons -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
-<link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+<div class="background-top"></div>
+<div class="background-bottom"></div>
+
 <div class="container">
 
-    <!-- Logo -->
+    <!-- ===========================
+            LOGO
+    ============================ -->
 
     <div class="logo">
 
-        <img src="images/Kaarii_LOGO.png" alt="Kaarii Logo">
+        <img src="images/Kaarii_LOGO.png"
+             alt="Kaarii Logo">
 
     </div>
 
-    <!-- Company Name -->
+    <!-- ===========================
+            COMPANY
+    ============================ -->
 
-    <div class="company">
+    <h2 class="company">
 
         kaarii
 
+    </h2>
+
+    <!-- Decorative Divider -->
+
+    <div class="divider">
+
+        <span></span>
+
+        <div class="dot"></div>
+
+        <span></span>
+
     </div>
 
-    <!-- Heading -->
+    <!-- ===========================
+            TITLE
+    ============================ -->
 
     <h1 class="title">
 
@@ -47,7 +73,21 @@
 
     </h1>
 
-    <!-- Subtitle -->
+    <!-- Decorative Divider -->
+
+    <div class="divider small">
+
+        <span></span>
+
+        <div class="dot"></div>
+
+        <span></span>
+
+    </div>
+
+    <!-- ===========================
+            SUBTITLE
+    ============================ -->
 
     <p class="subtitle">
 
@@ -57,113 +97,198 @@
 
     </p>
 
-    <!-- Cards -->
+    <!-- ===========================
+            CARDS
+    ============================ -->
 
     <div class="cards">
 
         <!-- Product Videos -->
 
-        <a class="card" href="#">
+        <a class="card"
+           id="videos"
+           href="#">
 
-            <span class="material-symbols-outlined card-icon">
+            <div class="icon-circle">
 
-                videocam
+                <span class="material-symbols-outlined">
 
-            </span>
+                    videocam
 
-            <span class="card-title">
+                </span>
+
+            </div>
+
+            <div class="card-title">
 
                 Product Videos
 
-            </span>
+            </div>
+
+            <div class="arrow">
+
+                ›
+
+            </div>
 
         </a>
 
         <!-- Catalogue -->
 
-        <a class="card" href="#">
+        <a class="card"
+           id="catalogue"
+           href="#">
 
-            <span class="material-symbols-outlined card-icon">
+            <div class="icon-circle">
 
-                menu_book
+                <span class="material-symbols-outlined">
 
-            </span>
+                    menu_book
 
-            <span class="card-title">
+                </span>
+
+            </div>
+
+            <div class="card-title">
 
                 Digital Catalogue
 
-            </span>
+            </div>
+
+            <div class="arrow">
+
+                ›
+
+            </div>
 
         </a>
 
         <!-- Website -->
 
-        <a class="card" href="#">
+        <a class="card"
+           id="website"
+           href="#">
 
-            <span class="material-symbols-outlined card-icon">
+            <div class="icon-circle">
 
-                language
+                <span class="material-symbols-outlined">
 
-            </span>
+                    language
 
-            <span class="card-title">
+                </span>
+
+            </div>
+
+            <div class="card-title">
 
                 Visit Website
 
-            </span>
+            </div>
+
+            <div class="arrow">
+
+                ›
+
+            </div>
 
         </a>
 
-        <!-- Instagram -->
+                <!-- Instagram -->
 
-        <a class="card" href="#">
+        <a class="card"
+           id="instagram"
+           href="#">
 
-            <img class="social-icon"
-                 src="images/instagram.png"
-                 alt="Instagram">
+            <div class="icon-circle">
 
-            <span class="card-title">
+                <img src="images/instagram.png"
+                     alt="Instagram">
+
+            </div>
+
+            <div class="card-title">
 
                 Instagram
 
-            </span>
+            </div>
+
+            <div class="arrow">
+
+                ›
+
+            </div>
 
         </a>
 
         <!-- WhatsApp -->
 
-        <a class="card" href="#">
+        <a class="card"
+           id="whatsapp"
+           href="#">
 
-            <img class="social-icon"
-                 src="images/whatsapp.png"
-                 alt="WhatsApp">
+            <div class="icon-circle">
 
-            <span class="card-title">
+                <img src="images/whatsapp.png"
+                     alt="WhatsApp">
+
+            </div>
+
+            <div class="card-title">
 
                 WhatsApp
 
-            </span>
+            </div>
+
+            <div class="arrow">
+
+                ›
+
+            </div>
 
         </a>
 
         <!-- Appointment -->
 
-        <a class="card" href="#">
+        <a class="card"
+           id="appointment"
+           href="#">
 
-            <span class="material-symbols-outlined card-icon">
+            <div class="icon-circle">
 
-                calendar_month
+                <span class="material-symbols-outlined">
 
-            </span>
+                    calendar_month
 
-            <span class="card-title">
+                </span>
 
-                Book Appointment
+            </div>
 
-            </span>
+            <div class="card-title">
+
+                Book a<br>
+                Design Consultation
+
+            </div>
+
+            <div class="arrow">
+
+                ›
+
+            </div>
 
         </a>
+
+    </div>
+
+    <!-- Footer Divider -->
+
+    <div class="divider">
+
+        <span></span>
+
+        <div class="dot"></div>
+
+        <span></span>
 
     </div>
 
@@ -172,6 +297,18 @@
     <div class="footer">
 
         Furniture that defines you.
+
+    </div>
+
+    <!-- Decorative Chair -->
+
+    <div class="footer-logo">
+
+        <span class="material-symbols-outlined">
+
+            chair
+
+        </span>
 
     </div>
 
