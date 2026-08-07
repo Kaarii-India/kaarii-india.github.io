@@ -85,7 +85,7 @@ MAIN CONTAINER
 
 .container{
 
-    width:min(92%,520px);
+    width:min(94%,600px);
 
     margin:auto;
 
@@ -101,13 +101,13 @@ LOGO
 
 .logo{
 
-    margin-bottom:8px;
+    margin-bottom:-8px;
 
 }
 
 .logo img{
 
-    width:180px;
+    width:260px;
 
     display:block;
 
@@ -181,7 +181,7 @@ TITLE
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:56px;
+    font-size:64px;
 
     font-weight:500;
 
@@ -235,7 +235,7 @@ CARDS
 
     color:#3B2A22;
 
-    min-height:190px;
+    min-height:205px;
 
     padding:24px 20px;
 
@@ -269,9 +269,9 @@ ICON CIRCLE
 
 .icon-circle{
 
-    width:78px;
+    width:88px;
 
-    height:78px;
+    height:88px;
 
     border-radius:50%;
 
