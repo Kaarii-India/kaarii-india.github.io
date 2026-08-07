@@ -85,7 +85,7 @@ MAIN CONTAINER
 
 .container{
 
-    width:min(94%,600px);
+    width:min(95%,700px);
 
     margin:auto;
 
@@ -215,9 +215,11 @@ CARD GRID
 
     display:grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr 1fr;
 
     gap:18px;
+
+    width:100%;
 
 }
 
