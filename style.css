@@ -480,13 +480,3 @@ RESPONSIVE
     }
 
 }
-
-@media(max-width:390px){
-
-    .cards{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
