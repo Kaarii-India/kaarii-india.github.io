@@ -13,8 +13,17 @@ body{
 }
 
 .logo{
-    font-size:48px;
+
     margin-top:20px;
+    margin-bottom:15px;
+
+}
+
+.logo img{
+
+    width:110px;
+    height:auto;
+
 }
 
 .company{
