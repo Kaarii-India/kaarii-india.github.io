@@ -1,7 +1,7 @@
 body{
     margin:0;
     background:#F8F5F1;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Poppins',sans-serif;
     color:#3b2a22;
 }
 
@@ -18,12 +18,14 @@ body{
 }
 
 .company{
+    font-family:'Cormorant Garamond',serif;
     font-size:42px;
     font-weight:300;
     margin:10px 0 30px;
 }
 
 .title{
+    font-family:'Cormorant Garamond',serif;
     font-size:46px;
     margin-bottom:15px;
 }
@@ -57,6 +59,7 @@ body{
 }
 
 .footer{
+    font-family:'Cormorant Garamond',serif;
     margin:70px 0;
     font-size:24px;
     font-style:italic;
