@@ -229,7 +229,8 @@ CARDS
 
 .card{
 
-    background:#FFFFFF;
+    background:#FFFEFC;
+    border:1px solid rgba(184,162,122,.18);
 
     border-radius:24px;
 
@@ -250,12 +251,13 @@ CARDS
     justify-content:center;
 
     box-shadow:
-       0 12px 30px rgba(60,45,30,.10),
-       0 2px 8px rgba(60,45,30,.05);
+       0 0 0 1px rgba(184,162,122,.18),
+       0 16px 40px rgba(0,0,0,.10);;
 
     transition:.30s;
 
     position:relative;
+    overflow:hidden;
 
 }
 
