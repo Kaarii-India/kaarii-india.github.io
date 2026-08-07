@@ -1,7 +1,6 @@
-/* ===========================
-   KAARII LANDING PAGE
-   PART 1
-=========================== */
+/* =====================================================
+   KAARII V2 - PART 1
+===================================================== */
 
 *{
     margin:0;
@@ -9,11 +8,27 @@
     box-sizing:border-box;
 }
 
+:root{
+
+    --bg:#F7F3EC;
+    --card:#FFFFFF;
+    --text:#35281F;
+    --sub:#6F655B;
+    --accent:#B89A77;
+    --line:#DDD2C4;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
 body{
 
-    background:#F8F5F1;
+    background:linear-gradient(
+        180deg,
+        #FBF8F3 0%,
+        #F7F3EC 100%
+    );
 
-    color:#3B2A22;
+    color:var(--text);
 
     font-family:'Poppins',sans-serif;
 
@@ -21,23 +36,71 @@ body{
 
 .container{
 
-    width:100%;
-
-    max-width:520px;
+    width:min(94%,560px);
 
     margin:auto;
 
-    padding:45px 22px 70px;
+    padding:40px 22px 80px;
 
-    text-align:center;
+    position:relative;
 
 }
 
-/* ===========================
+/* =======================================
+   DECORATIVE BACKGROUND
+======================================= */
+
+.background-top{
+
+    position:fixed;
+
+    top:-180px;
+
+    right:-180px;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:#EFE6DA;
+
+    opacity:.45;
+
+    z-index:-2;
+
+}
+
+.background-bottom{
+
+    position:fixed;
+
+    left:-150px;
+
+    bottom:-150px;
+
+    width:340px;
+
+    height:340px;
+
+    border-radius:50%;
+
+    background:#F0E8DD;
+
+    opacity:.55;
+
+    z-index:-2;
+
+}
+
+/* =======================================
    LOGO
-=========================== */
+======================================= */
 
 .logo{
+
+    text-align:center;
 
     margin-bottom:12px;
 
@@ -45,175 +108,281 @@ body{
 
 .logo img{
 
-    width:160px;
+    width:170px;
 
-    height:auto;
+    max-width:70%;
+
+    display:block;
+
+    margin:auto;
 
 }
 
-/* ===========================
+/* =======================================
    COMPANY
-=========================== */
+======================================= */
 
 .company{
 
+    text-align:center;
+
     font-family:'Cormorant Garamond',serif;
 
-    font-size:58px;
+    font-size:56px;
 
     font-weight:500;
 
     letter-spacing:1px;
 
-    color:#3B2A22;
-
-    margin-bottom:20px;
+    margin-bottom:18px;
 
 }
 
-/* ===========================
+/* =======================================
+   DIVIDER
+======================================= */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    margin:18px auto;
+
+}
+
+.divider.small{
+
+    margin:12px auto 24px;
+
+}
+
+.divider span{
+
+    width:90px;
+
+    height:1px;
+
+    background:var(--line);
+
+}
+
+.dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+}
+
+/* =======================================
    TITLE
-=========================== */
+======================================= */
 
 .title{
+
+    text-align:center;
 
     font-family:'Cormorant Garamond',serif;
 
     font-size:52px;
 
-    font-weight:500;
+    font-weight:600;
 
     line-height:1.1;
 
-    color:#3B2A22;
-
-    margin-bottom:22px;
+    margin-top:10px;
 
 }
 
-/* ===========================
+/* =======================================
    SUBTITLE
-=========================== */
+======================================= */
 
 .subtitle{
 
-    font-size:22px;
+    text-align:center;
 
-    line-height:1.65;
+    color:var(--sub);
 
-    color:#666;
+    font-size:18px;
 
-    margin-bottom:55px;
+    line-height:1.8;
+
+    max-width:420px;
+
+    margin:0 auto 45px;
 
 }
 
-/* ===========================
-   GRID
-=========================== */
+/* =======================================
+   CARD GRID
+======================================= */
 
 .cards{
 
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(2,1fr);
 
-    gap:22px;
-
-    margin-bottom:65px;
+    gap:20px;
 
 }
 
-/* ===========================
-   CARD DESIGN
-=========================== */
+/* =======================================
+   CARD
+======================================= */
 
 .card{
 
-    background:#FFFFFF;
+    background:var(--card);
 
-    border-radius:24px;
+    border-radius:28px;
 
-    min-height:175px;
+    padding:26px 18px;
 
-    padding:24px 18px;
-
-    text-decoration:none;
-
-    color:#3B2A22;
+    min-height:185px;
 
     display:flex;
 
     flex-direction:column;
 
-    justify-content:center;
-
     align-items:center;
 
-    transition:.25s ease;
+    justify-content:center;
 
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    text-decoration:none;
+
+    color:var(--text);
+
+    box-shadow:var(--shadow);
+
+    transition:all .30s ease;
+
+    position:relative;
+
+    overflow:hidden;
 
 }
 
 .card:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-8px);
 
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
+    box-shadow:0 20px 45px rgba(0,0,0,.14);
 
 }
 
-/* ===========================
-   MATERIAL ICONS
-=========================== */
+/* =======================================
+   ICON CIRCLE
+======================================= */
 
-.card-icon{
+.icon-circle{
 
-    font-size:52px;
+    width:72px;
 
-    color:#8B6B4A;
+    height:72px;
+
+    border-radius:50%;
+
+    background:#F4EEE6;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
 
     margin-bottom:18px;
 
 }
 
-/* ===========================
+.icon-circle span{
+
+    font-size:34px;
+
+    color:var(--accent);
+
+}
+
+/* =======================================
    SOCIAL ICONS
-=========================== */
+======================================= */
 
-.social-icon{
+.icon-circle img{
 
-    width:52px;
+    width:34px;
 
-    height:52px;
+    height:34px;
 
     object-fit:contain;
 
-    margin-bottom:18px;
-
 }
 
-/* ===========================
-   CARD TEXT
-=========================== */
+/* =======================================
+   CARD TITLE
+======================================= */
 
 .card-title{
 
-    font-size:18px;
+    text-align:center;
+
+    font-size:17px;
 
     font-weight:600;
 
-    line-height:1.4;
+    line-height:1.45;
 
-    text-align:center;
+    color:var(--text);
+
+    padding:0 6px;
 
 }
 
-/* ===========================
+/* =======================================
+   ARROW
+======================================= */
+
+.arrow{
+
+    position:absolute;
+
+    right:18px;
+
+    bottom:14px;
+
+    font-size:24px;
+
+    color:#B8A18A;
+
+    transition:.30s;
+
+}
+
+.card:hover .arrow{
+
+    right:14px;
+
+}
+
+/* =======================================
    FOOTER
-=========================== */
+======================================= */
 
 .footer{
+
+    margin-top:60px;
+
+    text-align:center;
 
     font-family:'Cormorant Garamond',serif;
 
@@ -221,91 +390,129 @@ body{
 
     font-style:italic;
 
-    color:#7A5B45;
-
-    margin-top:15px;
-
-    line-height:1.4;
+    color:#6D5B4C;
 
 }
 
-/* ===========================
-   MOBILE
-=========================== */
+/* =======================================
+   FOOTER LOGO
+======================================= */
 
-@media (max-width:480px){
+.footer-logo{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.footer-logo span{
+
+    font-size:42px;
+
+    color:#B89A77;
+
+}
+
+/* =======================================
+   MOBILE
+======================================= */
+
+@media(max-width:520px){
 
     .container{
 
-        padding:35px 18px 50px;
+        padding:34px 18px 60px;
 
     }
 
     .logo img{
 
-        width:170px;
+        width:185px;
 
     }
 
     .company{
 
-        font-size:52px;
+        font-size:48px;
 
     }
 
     .title{
 
-        font-size:44px;
+        font-size:42px;
 
     }
 
     .subtitle{
 
-        font-size:18px;
+        font-size:16px;
 
-        margin-bottom:45px;
+        margin-bottom:36px;
 
     }
 
     .cards{
 
-        gap:18px;
+        gap:16px;
 
     }
 
     .card{
 
-        min-height:155px;
+        min-height:165px;
 
-        padding:18px;
+        padding:20px 14px;
+
+        border-radius:22px;
 
     }
 
-    .card-icon{
+    .icon-circle{
 
-        font-size:44px;
+        width:62px;
+
+        height:62px;
 
         margin-bottom:14px;
 
     }
 
-    .social-icon{
+    .icon-circle span{
 
-        width:44px;
+        font-size:30px;
 
-        height:44px;
+    }
+
+    .icon-circle img{
+
+        width:30px;
+
+        height:30px;
 
     }
 
     .card-title{
 
-        font-size:16px;
+        font-size:15px;
 
     }
 
     .footer{
 
         font-size:24px;
+
+        margin-top:45px;
+
+    }
+
+}
+
+@media(max-width:390px){
+
+    .cards{
+
+        grid-template-columns:1fr;
 
     }
 
